@@ -1,0 +1,218 @@
+@import url(https://alfont.com/);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-image:url('moon.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 440px;
+    height: 370px;
+    background: rgb(17, 17, 113);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10 rgba(0, 0, 0, .2);
+    color: rgb(255, 255, 255);
+    border-radius: 45px;
+    padding: 8px;
+}
+.mbark{
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 15px;
+    background-image: url(font.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.name{
+  font-size: 20px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 450;
+}
+.container .input-box{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 23px 18px 20px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+}
+.input-box input::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 360px;
+    font-size: 20px;
+}
+.container .btn{
+    width: 100%;
+    height: 45px;
+    z-index: 1;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 10 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 600;
+}
+.note{
+    font-size: 12px;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 550;
+    text-align: center;
+    padding-top: 18px;
+}
+.container .note .heart{
+    background-size: 6%;
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+}
+.cont-tem{
+    display: none;
+}
+.cont-tem::after{
+    height: 100%;
+    width: 100%;
+    z-index: 5001;
+}
+.terminal{
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: fixed;
+    bottom: 29%;
+    left: -260px;
+    z-index: 5002;
+}
+.anim-text{
+    position: relative;
+    width: 500px;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.anim-text::before{
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+}
+.anim-text pre{
+    display: flex;
+    flex-direction: row;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: lime;
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+.anim-text pre p{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.anim-text pre:nth-child(1) p{
+    width: 3.5em;
+    animation: typing  0.5s steps(30, end);
+}
+.anim-text pre:nth-child(2) p{
+    animation: typing2 3s steps(50, end);
+}
+.anim-text pre:nth-child(3) p{
+  animation: typing2 5.5s steps(50, end);
+}
+.anim-text pre:nth-child(4) p{
+  animation: typing2 8s steps(50, end);
+}
+.anim-text pre:nth-child(5) p{
+  animation: typing2 10.5s steps(50, end);
+}
+.anim-text pre:nth-child(6) p{
+  animation: typing2 13s steps(50, end);
+}
+span {
+  display: block;
+  padding: 1px 0px;
+  background-color: lime;
+  animation: blink 0.8s infinite;
+}
+.landpage{
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    color: rgb(255, 255, 255);
+    z-index: 5000;
+    display: none;
+}
+@keyframes typing  {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing2 {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 0;
+  }
+  100% {
+    width: 500px;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: 0.3;
+  }
+}

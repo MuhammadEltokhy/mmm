@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Noto+Serif+Hentaigana:wght@200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Gulzar&family=Noto+Serif+Hentaigana:wght@200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    justify-content: center;
+    z-index: 100;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(BGEM.png);
+    
+}
+.mubark{
+    font-family: "Gulzar", sans-serif;
+    font-weight: 600px;
+    font-size: 100px;
+    background-image: url(Eid.webp);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: 10;
+}
+.helal{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+.aura{
+    z-index: 101;
+    bottom: 80px;
+    left: 31.5%;
+    height: 300px;
+    width: 460px;
+    transform: scale(150%);
+    position: fixed;
+    box-shadow: 50px black;
+
+}
